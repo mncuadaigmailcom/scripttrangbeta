@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<style>
+ .fake-ad { background:#fff3cd; color:#856404; border:1px solid #ffeeba; padding:12px; margin:10px auto; border-radius:6px; text-align:center; font-family:sans-serif; position:relative; z-index:99999; display:flex; flex-direction:column; justify-content:center; align-items:center; } .fake-ad-tag { position:absolute; top:2px; left:5px; font-size:9px; background:#ccc; color:#fff; padding:1px 3px; border-radius:2px; } .fake-ad-title { font-size:13px; display:block; margin-bottom:4px; font-weight:bold; } .fake-ad-close { position:absolute; top:4px; right:6px; background:none; border:none; font-weight:bold; cursor:pointer; } .video-ad-overlay { position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.96); color:white; z-index:99999999; display:flex; flex-direction:column; justify-content:center; align-items:center; font-family:sans-serif; padding:20px; text-align:center; } .video-box { width:100%; max-width:320px; height:180px; background:#000; display:flex; flex-direction:column; gap:12px; justify-content:center; align-items:center; border:2px solid #00b0ff; margin-bottom:15px; border-radius:6px; color:#00b0ff; font-weight:bold; } .video-progress { width:82%; height:7px; background:#1b1b20; border-radius:4px; overflow:hidden; border:1px solid #2a2a32; } .video-progress-bar { width:0%; height:100%; background:linear-gradient(90deg,#00b0ff,#00e676); transition:width 1s linear; } .video-ad-badge { font-size:11px; color:#8e8e93; letter-spacing:0.5px; } .video-timer-text { font-size:14px; margin-bottom:15px; } .video-btn { padding:10px 20px; background:#00e676; border:none; color:#052e16; font-weight:bold; border-radius:4px; cursor:pointer; } .video-btn:disabled { background:#3a3a40!important; color:#8e8e93!important; cursor:not-allowed!important; opacity:0.6; }  .fake-ad { width: calc(100% - 20px); } 
+/* CSS và Fonts của trang web đã được tối ưu và tích hợp chuẩn xác trong tab HTML */
+</style>
+<script>(function() { const origLog = console.log; const origErr = console.error; const origWarn = console.warn; console.log = function(...args) { window.parent.postMessage({ type: 'log', data: args.join(' ') }, '*'); origLog.apply(console, args); }; console.error = function(...args) { window.parent.postMessage({ type: 'error', data: args.join(' ') }, '*'); origErr.apply(console, args); }; console.warn = function(...args) { window.parent.postMessage({ type: 'warn', data: args.join(' ') }, '*'); origWarn.apply(console, args); }; window.onerror = function(m, s, l) { window.parent.postMessage({ type: 'error', data: m + " (Dòng " + l + ")" }, '*'); }; })();</script>
+
+    <base href="https://notevn.com/cbyurm9g"> <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> <title>notevn / cbyurm9g | Ghi chú trực tuyến ẩn danh</title> <link rel="shortcut icon" href="https://notevn.com/assets/img/textvn_clone.ico" type="image/x-icon"> <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> <meta name="description" content="Lưu trữ ghi chú, văn bản, đoạn văn, code của bạn ẩn danh vĩnh viễn cho dù bạn có đặt mật khẩu hay không!"> <meta name="keywords" content="ghi chú, code, notepad, note, việt nam, lưu trữ, đoạn văn, văn bản, mật khẩu, vĩnh viễn, ẩn danh"> <meta name="robots" content="index"> <meta name="googlebot" content="index"> <meta property="og:type" content="website"> <meta property="og:title" content="notevn / cbyurm9g | Ghi chú trực tuyến ẩn danh"> <meta property="og:description" content="Lưu trữ ghi chú, văn bản, đoạn văn, code của bạn ẩn danh vĩnh viễn cho dù bạn có đặt mật khẩu hay không!"> <meta property="og:url" content="https://notevn.com/cbyurm9g"> <meta property="og:image" content="https://notevn.com/assets/img/notevn_logo5.5K.png"> <meta property="og:image:alt" content="notevn.com's logo and slogan"> <meta property="fb:app_id" content="509558526266001"> <link rel="canonical" href="https://notevn.com/cbyurm9g"> <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700"> <link href="https://notevn.com/assets/css/arrow.css?yxacebcay6" rel="stylesheet"> <link href="https://notevn.com/test.css?zdg14vbxaq" rel="stylesheet"> <link href="https://notevn.com/assets/css/global.min.css" rel="stylesheet"> <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script> <link media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css" rel="stylesheet" type="text/css"> <link media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/quill/2.0.0-dev.3/quill.snow.min.css"> <link media="print" onload="this.onload=null;this.removeAttribute('media');" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.11.0/css/alertify.min.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.11.0/css/themes/default.min.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/min/dropzone.min.css" integrity="sha256-e47xOkXs1JXFbjjpoRr1/LhVcqSzRmGmPqsrUQeVs+g=" crossorigin="anonymous"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/min/basic.min.css"> <link media="print" onload="this.onload=null;this.removeAttribute('media');" rel="stylesheet" href="https://notevn.com/assets/vendor/vitable-plugin/css/table.plugin.css"> <link rel="manifest" href="https://notevn.com/manifest.json"> <!-- Google Tag Manager -->
+<!-- End Google Tag Manager -->
+</head>
+<body> <!-- Google Tag Manager (noscript) --> <noscript>
+</noscript>
+<!-- End Google Tag Manager (noscript) --> <div class="wrap"> <div class="nav"> <div class="fl-left"> <span class="logo"> <b>notevn</b>.com </span> <span class="updated"> &nbsp;<i class="ion-checkmark">
+</i> </span> </div> <div class="fl-right"> <div class="options"> <a href="https://notevn.com/" class="menu-item" title=""> <div class="tooltip">
+<i class="ion-plus">
+</i> <span class="tooltiptext desktop-only">Mở note mới</span> </div> </a> <a href="javascript:void(0)" class="menu-item" id="lockNoteBtn"> <div class="tooltip">
+<i class="ion-locked">
+</i> <span class="tooltiptext desktop-only">Mở khóa</span> </div> </a> <a href="javascript:void(0)" class="menu-item" id="unlockAltNoteBtn" style="display: none"> <div class="tooltip">
+<i class="ion-unlocked">
+</i> <span class="tooltiptext desktop-only">Chỉnh mật khẩu</span> </div> </a> <a href="javascript:void(0)" class="menu-item" id="withoutLockNoteBtn" style="display: none"> <div class="tooltip">
+<i class="ion-unlocked">
+</i> <span class="tooltiptext desktop-only">Đặt mật khẩu</span> </div> </a> <a href="javascript:void(0)" class="menu-item" id="newNoteBtn"> <div class="tooltip">
+<i class="ion-edit">
+</i> <span class="tooltiptext desktop-only">Đổi note</span> </div> </a> <span class="desktop-only"> <a href="javascript:void(0)" onclick="theme(this);"> <div class="tooltip"> <span class="dark_mode"> <i class="ion-contrast">
+</i> </span> <span class="tooltiptext desktop-only">Chế độ tối</span> </div> </a> </span> <span class="desktop-only"> <a href="https://notevn.com/account"> <div class="tooltip"> <span> <i class="ion-person">
+</i> </span> <span class="tooltiptext desktop-only"> Bạn chưa đăng nhập </span> </div> </a> </span> </div> </div> <div class="clear">
+</div> </div> <div class="major-wrap" id="content"> <div class="textarea ql-container ql-snow" spellcheck="false" style="height: 303.75px;">
+</div> <input type="text" class="note-hidden" id="noteHiddenUrl"> <textarea class="note-hidden" id="noteHiddenData">
+</textarea> <div class="footer"> <input type="text" value="https://notevn.com/cbyurm9g" class="main-url share-url desktop-only" onclick="this.select();" readonly="readonly"> <br class="desktop-only"> <button class="share-copy share-url mobile-only" data-clipboard-text="https://notevn.com/cbyurm9g"> <span> <i class="ion-link">
+</i> Gốc </span> </button> <button class="share-copy share-url" title="Ẩn liên kết gốc" data-clipboard-text="https://notevn.com/share/qdzjmz94"> <span> <i class="ion-android-share">
+</i> Chia sẻ </span> </button>&nbsp; <button class="share-copy share-url" title="Xem raw" data-clipboard-text="https://notevn.com/raw/qdzjmz94"> <span> <i class="ion-clipboard space-share">
+</i> Raw </span> </button> </div> </div> <div class="nvn-share desktop-only"> <div class="share-content" style="display: none;"> <a class="share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://notevn.com/share/qdzjmz94" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" target="_blank"> <i class="ion-social-facebook">
+</i> </a> <a class="share-link" href="https://twitter.com/share?text=notevn.com&amp;url=https://notevn.com/share/qdzjmz94" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" target="_blank"> <i class="ion-social-twitter">
+</i> </a> <a class="share-link" href="https://reddit.com/submit?url=https://notevn.com/share/qdzjmz94&amp;title=notevn.com" target="_blank"> <i class="ion-social-reddit">
+</i> </a> </div> <i class="share-opener ion-ios-upload-outline" style="width: 20px;display: block;">
+</i> </div> <div class="sub-footer text-center"> <div class="desktop-only"> <!--<small> Hãy cài đặt tiện ích mở rộng <strong>
+<a href="/app">NoteVN Tracker</a>
+</strong> hoặc <strong>
+<a href="/account/register">đăng ký tài khoản</a>
+</strong> để theo dõi ghi chú, tập tin của bạn dễ dàng hơn! </small>--> <small> <strong>
+<a href="https://noteop.com/">NoteOp.com</a>
+</strong> - Quản lý ghi chú và công việc một cách chuyên nghiệp với bộ công cụ mạnh mẽ tích hợp AI. </small> </div> <br> <div> <small> <b>Từ:</b> <span class="word_count">0</span>
+</small> | <small>
+<b>Lượt xem:</b> 4 </small> </div> <div class="footer-stats">
+    <small title="25/10/2026 14:58:49">
+        <b>Cập nhật lần cuối:</b> 1 phút trước</small>
+        </div> <br> <b> <a target="_blank" href="https://notevn.com/chinh-sach">Chính sách </a> </b> <i class="ion-ios-minus-empty">
+    </i> <b> <a target="_blank" href="https://notevn.com/lien-he"> Liên hệ </a> </b> <i class="ion-ios-minus-empty">
+</i> <b> <a target="_blank" href="https://notevn.com/blog"> Blog </a> </b> <i class="ion-ios-minus-empty">
+</i> <b> <a target="_blank" href="https://notevn.com/app"> App </a> </b> <!--<i class="ion-ios-minus-empty">
+</i>--> <!-- <a id="advantageBox">
+<b>notevn</b>.com </a>--> <!--<i class="ion-ios-minus-empty">
+</i>--> <!-- <a href="https://maxmines.com" target="_blank">
+<b>maxmines</b>.com </a>--> </div> </div>  <script> pad_key = 'qdzjmz94'; url_key = 'cbyurm9g'; main_url = 'cbyurm9g'; version = 475; build_day = 1032226; </script> <script src="https://cdnjs.cloudflare.com/ajax/libs/aes-js/3.1.2/index.min.js">
+</script> <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.min.js">
+</script> <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.12.0/build/alertify.min.js">
+</script> <script src="https://cdnjs.cloudflare.com/ajax/libs/quill/2.0.0-dev.3/quill.min.js">
+</script> <script src="https://cdnjs.cloudflare.com/ajax/libs/store.js/1.3.20/store.min.js">
+</script> <script src="https://notevn.com/assets/js/v19.min.js?c7mb1a5nj1tefkkm8a">
+</script> <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/min/dropzone.min.js" integrity="sha256-cs4thShDfjkqFGk5s2Lxj35sgSRr4MRcyccmi0WKqCM=" crossorigin="anonymous">
+</script> <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js">
+</script> <script src="https://notevn.com/assets/vendor/vitable-plugin/js/table.plugin.js">
+</script> <script src="https://notevn.com/assets/js/app.min.js?23">
+</script> <script> var editor = document.querySelector(".ql-editor"), words = document.querySelector(".word_count"), wordCountInitialized = false; function wordsCount() { var matches = this.quill.getText().trim().match(/\S+/g); words.textContent = matches ? matches.length : 0; } function setupWordCountOnFirstChange () { if (typeof this.quill !== 'undefined' && this.quill && !wordCountInitialized) { this.quill.once('editor-change', (eventName, ...args) => { if (eventName !== 'text-change' || args.length < 3 || args[2] != 'silent') { return; } wordCountInitialized = true; wordsCount(); }); } else if (typeof this.quill === 'undefined') { setTimeout(setupWordCountOnFirstChange, 100); } } setupWordCountOnFirstChange(); store.get("urls") ? (arr = JSON.parse(store.get("urls")), -1 === $.inArray(main_url, arr) && (arr.unshift( main_url), arr.splice(5, 1), store.set("urls", JSON.stringify(arr)))) : (arr = [], arr.unshift(main_url), store.set("urls", JSON.stringify(arr))); </script> <noscript> <style type="text/css"> .wrap { display: none; } </style> <div> <h2>Bạn cần bật Javascript để có thể tiếp tục sử dụng.</h2> </div> </noscript> <script> if (window.history.replaceState) { window.history.replaceState(null, null, window.location.href); } </script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;fc26ba1b47dd4502954c9817646e897e&quot;,&quot;r&quot;:1,&quot;spa&quot;:2}" crossorigin="anonymous">
+</script>
+
+<script>
+// JS của trang web đã được định dạng và tích hợp chuẩn xác trong tab HTML
+
+</script>
+</body>
+</html>
